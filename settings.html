@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الإعدادات - تطبيق حكومي</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;family=Lexend:wght@400;500;700&amp;family=Lexend:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#20BD20", "background-light": "#f7f7f6", "background-dark": "#1b1c16", "surface-light": "#ffffff", "surface-dark": "#1a2c1a"}, fontFamily: {display: "Lexend", body: ["Noto Sans Arabic", "Public Sans", "sans-serif"]}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}}}};</script>
+<style>.toggle-checkbox:checked {
+            right: 0;
+            border-color: #13ec13;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #13ec13;
+        }
+        .toggle-checkbox:not(:checked) + .toggle-label {
+            background-color: #ef4444;}.material-symbols-outlined {
+            vertical-align: middle;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111811] dark:text-white font-body overflow-x-hidden min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 transition-colors duration-200">
+<div class="flex items-center justify-between px-4 py-3 h-[60px]">
+<div class="flex-1 flex justify-center items-center pr-8">
+<h1 class="text-xl font-bold leading-tight tracking-tight">الإعدادات</h1>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full active:bg-gray-100 dark:active:bg-gray-800 text-blue-600 dark:text-primary transition-colors">
+<span aria-hidden="true" class="material-symbols-outlined text-[28px]">arrow_forward_ios</span>
+<span class="sr-only">رجوع</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-md mx-auto p-4 pb-20 space-y-6">
+<section class="mt-2 space-y-4">
+<h2 class="sr-only">إعدادات إمكانية الوصول</h2>
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 overflow-hidden">
+<div class="h-32 w-full relative bg-gradient-to-r from-emerald-50 to-teal-100 dark:from-green-900/30 dark:to-emerald-900/30 flex items-center justify-center overflow-hidden" data-alt="Abstract soft green gradient representing accessibility and ease">
+<span class="material-symbols-outlined text-6xl text-primary/40">accessibility_new</span>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<h3 class="text-xl font-bold text-[#111811] dark:text-white leading-tight">
+                                واجهة كبار السن
+                            </h3>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-relaxed">
+                                تكبير الخطوط وتبسيط الأيقونات لتجربة استخدام أسهل وأوضح.
+                            </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-800 mt-2">
+<span class="text-sm font-medium text-gray-900 dark:text-gray-200">حالة التفعيل</span>
+<label class="relative inline-flex items-center cursor-pointer group">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-16 h-9 bg-red-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer peer-checked:bg-[#13ec13] transition-colors duration-300 ease-in-out shadow-inner"></div>
+<div class="absolute top-[4px] start-[4px] bg-white border-gray-300 border rounded-full h-7 w-7 transition-all duration-300 peer-checked:-translate-x-full rtl:peer-checked:-translate-x-[100%] rtl:peer-checked:translate-x-[-28px] shadow-sm flex items-center justify-center">
+<span class="text-[16px] text-red-500 opacity-100 peer-checked:opacity-0 transition-opacity absolute duration-200"></span>
+<span class="text-[16px] text-[#13ec13] opacity-0 peer-checked:opacity-100 transition-opacity absolute duration-200"></span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase tracking-wider px-4 mb-2">الحساب والأمان</h2>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 divide-y divide-gray-100 dark:divide-gray-800">
+<button class="w-full flex items-center gap-4 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors group text-right">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 shrink-0">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-[#111811] dark:text-white">تغيير كلمة المرور</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:text-gray-500 rtl:rotate-180">chevron_right</span>
+</button>
+<div class="flex items-center justify-between gap-4 p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 shrink-0">
+<span class="material-symbols-outlined">fingerprint</span>
+</div>
+<div>
+<p class="text-base font-medium text-[#111811] dark:text-white">الدخول بالبصمة</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:-translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase tracking-wider px-4 mb-2">عام</h2>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 divide-y divide-gray-100 dark:divide-gray-800">
+<div class="flex items-center justify-between gap-4 p-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 shrink-0">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div>
+<p class="text-base font-medium text-[#111811] dark:text-white">الإشعارات والتنبيهات</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:-translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<button class="w-full flex items-center gap-4 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors group text-right">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 shrink-0">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div class="flex-1 flex justify-between items-center">
+<p class="text-base font-medium text-[#111811] dark:text-white">اللغة</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 ml-2">العربية</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:text-gray-500 rtl:rotate-180">chevron_right</span>
+</button>
+<button class="w-full flex items-center gap-4 p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors group text-right">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-[#111811] dark:text-white">المساعدة والدعم</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:text-gray-500 rtl:rotate-180">chevron_right</span>
+</button>
+</div>
+</section>
+<div class="pt-6 flex flex-col items-center gap-4">
+<button class="w-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 text-red-600 dark:text-red-400 font-bold text-lg py-3 rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors shadow-sm">
+                تسجيل الخروج
+            </button>
+<p class="text-xs text-gray-400 dark:text-gray-600 font-sans ltr:font-sans">Version 2.0.1 (Build 4402)</p>
+</div>
+</main>
+</body></html>
