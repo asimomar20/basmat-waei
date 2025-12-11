@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>لوحة تحكم الخدمات العامة</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600;700" rel="stylesheet"/>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+    }
+    body { min-height: max(884px, 100dvh); }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0fbd0f",
+            "background-light": "#f6f8f6",
+            "background-dark": "#102210",
+            "green-primary": "#717a43",
+            "red-emergency": "#D32F2F",
+            "text-dark": "#212121",
+            "card-light": "#FFFFFF",
+            "card-border": "#717a43"
+          },
+          fontFamily: { "display": ["Tajawal", "sans-serif"] },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+
+  <header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-card-border">
+    <div class="flex size-12 shrink-0 items-center justify-center"></div>
+    <h1 class="text-text-dark text-xl font-bold flex-1 text-center">لوحة تحكم الخدمات العامة</h1>
+    <div class="flex size-12 shrink-0 items-center justify-center">
+      <span class="material-symbols-outlined text-3xl text-text-dark">notifications</span>
+    </div>
+  </header>
+
+  <main class="flex flex-col gap-6 p-4 pt-6">
+
+    <section>
+      <div class="flex items-center gap-4">
+        <img alt="صورة المستخدم" class="h-16 w-16 rounded-full"
+             src="Ammar_Alotaibi_Square_Frame.png"/>
+        <div>
+          <p class="text-lg text-text-dark/70">مرحباً بعودتك</p>
+          <h2 class="text-2xl font-bold text-text-dark">عمار العتيبي</h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex flex-col gap-8">
+
+      <!-- الأحوال المدنية -->
+      <section>
+        <h2 class="text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-1 mb-4">الأحوال المدنية</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">badge</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">الهوية وجواز السفر</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">family_restroom</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">سجل الأسرة</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">event</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">حجز المواعيد</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- المرور والمركبات -->
+      <section>
+        <h2 class="text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-1 mb-4">المرور والمركبات</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">id_card</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">رخص القيادة</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">directions_car</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">ملكية المركبات</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">receipt_long</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">المخالفات المرورية</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- خدمات متنوعة -->
+      <section>
+        <h2 class="text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-1 mb-4">خدمات متنوعة</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">work</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">التوظيف</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">health_and_safety</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">التأمين الصحي</h3>
+          </div>
+          <div class="service-card flex flex-col items-center justify-start gap-2 rounded-lg border border-card-border bg-card-light p-3 text-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-primary/10">
+              <span class="material-symbols-outlined text-3xl text-green-primary">description</span>
+            </div>
+            <h3 class="text-text-dark text-sm font-bold leading-tight mt-1">الوثائق الرسمية</h3>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<script>
+  // قناة للبث اللحظي مع الداشبورد
+  let channel = null;
+  try {
+    channel = new BroadcastChannel("dashboardUpdates");
+  } catch (e) {
+    console.warn("BroadcastChannel غير مدعوم في هذا المتصفح");
+  }
+
+  function broadcastStats() {
+    if (!channel) return;
+    const wrongClicks = localStorage.getItem("wrongClicks") || "0";
+    const alertsCount = localStorage.getItem("alertsCount") || "0";
+    channel.postMessage({ wrongClicks, alertsCount });
+  }
+
+  // قراءة قيمة سابقة لو موجودة
+  let wrongClicks = Number(localStorage.getItem("wrongClicks") || 0);
+
+  document.addEventListener("click", function (e) {
+    const isServiceCard = e.target.closest(".service-card");
+
+    // الضغط على كرت خدمة = سلوك طبيعي
+    if (isServiceCard) return;
+
+    // أي ضغط غير ذلك = سلوك غير معتاد
+    wrongClicks++;
+    localStorage.setItem("wrongClicks", String(wrongClicks));
+    console.log("ضغطات غير عادية:", wrongClicks);
+
+    // بث التحديث
+    broadcastStats();
+
+    // عند 5 ضغطات غير عادية → تنبيه + عدّ المرة + تصفير العداد
+    if (wrongClicks >= 5) {
+      let alertsCount = Number(localStorage.getItem("alertsCount") || 0);
+      alertsCount++;
+      localStorage.setItem("alertsCount", String(alertsCount));
+
+      // تصفير العداد بعد الوصول للحد
+      wrongClicks = 0;
+      localStorage.setItem("wrongClicks", "0");
+
+      // بث القيم بعد التصفير
+      broadcastStats();
+
+      // تحويل المستخدم لصفحة التنبيه
+      window.location.href = "warning.html";
+    }
+  });
+
+  // أول ما تفتح الصفحة يبث القيم الحالية (لو فيه داشبورد مفتوح)
+  broadcastStats();
+</script>
+</body>
+</html>
